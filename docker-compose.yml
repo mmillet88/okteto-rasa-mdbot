@@ -16,7 +16,7 @@ services:
     command: ["rasa", "run", "m-models", "--enable-api", "--cors", "“*”", "-p 5006"]
     #command: bash -c "rm -rf models/* && rasa train && rasa run --enable-api --cors \"*\" --debug"
     #ports:
-    forward:
+    ports:
     - '5006:5005'
     public: true
     networks:
