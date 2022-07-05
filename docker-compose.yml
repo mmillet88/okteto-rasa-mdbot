@@ -5,7 +5,7 @@ services:
     ports:
     - 8000:8000
   rasa-server:
-    image: rasa-server-okteto:latest
+    image: rasa-bot:latest
     build: "./"
     restart: always
     working_dir: /app
@@ -21,7 +21,7 @@ services:
     - all
 
   rasa-actions-server:
-    image: rasa-server-okteto:latest
+    image: rasa-bot:latest
     build: "./"
     restart: always
     working_dir: /app
