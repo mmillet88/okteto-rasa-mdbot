@@ -12,7 +12,7 @@ services:
     restart: always
     working_dir: /app
     volumes:
-    # - ./models:/app/models
+    - ./models:/app/models
     - ./data:/app/data
     - ./actions:/app/actions
     command: ["rasa", "run", "-m models", "--enable-api", "--cors", "\"*\"", "-p 5006"]
